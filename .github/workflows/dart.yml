@@ -24,11 +24,8 @@ jobs:
             channel: 'stable'
       - run: flutter clean
       - run: flutter pub get
-        working-directory: ./study_ci_cd
       - run: flutter test
-        working-directory: ./study_ci_cd
       - run: flutter build apk --debug
-        working-directory: ./study_ci_cd
       - name: Upload APK
         uses: actions/upload-artifact@master
         with:
