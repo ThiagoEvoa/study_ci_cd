@@ -32,11 +32,11 @@ jobs:
           name: android-build
           path: ./study_ci_cd/build/app/outputs/apk/debug/*.apk
    
-  delete_android_artifact:
-    needs: [build_apk]
-    name: Delete artifact
-    runs-on: ubuntu-latest
-    steps:
-    - uses: geekyeggo/delete-artifact@v2
-      with:
-        name: android-build
+  # delete_android_artifact:
+  #   needs: [build_apk]
+  #   name: Delete artifact
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: geekyeggo/delete-artifact@v2
+  #     with:
+  #       name: android-build
