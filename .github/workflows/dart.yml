@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: android-build
-          path: ./study_ci_cd/build/app/outputs/apk/debug/*.apk
+          path: ./build/app/outputs/apk/debug/*.apk
    
   # delete_android_artifact:
   #   needs: [build_apk]
